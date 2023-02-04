@@ -1,33 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/starter/src/assets/img/apple-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter/src/assets/img/banner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/.github/workflows/main.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/public/apple-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/starter/public/apple-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/starter/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/pattern_react.png" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/assets/img/pattern_react.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/register_bg_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/assets/img/register_bg_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/assets/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/assets/styles/tailwind.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/components/Footers/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/components/Footers/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/components/Footers/FooterSmall.js" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/components/Footers/FooterSmall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/components/Navbars/AuthNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/components/Navbars/AuthNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/components/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/layouts/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/layouts/Admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/layouts/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/layouts/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/views/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/views/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/views/Landing.js" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/views/Landing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/views/auth/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/views/auth/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starter/src/views/auth/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/starter/src/views/auth/Register.js" afterDir="false" />
-    </list>
+    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/starter" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,6 +42,7 @@
       <updated>1675279443068</updated>
       <workItem from="1675279446335" duration="3925000" />
       <workItem from="1675437565095" duration="15616000" />
+      <workItem from="1675523060425" duration="280000" />
     </task>
     <servers />
   </component>

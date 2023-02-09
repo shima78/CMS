@@ -1,7 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="" />
+    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="workspace">
+      <change afterPath="$PROJECT_DIR$/next-client/.github/workflows/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Cards/CardBarChart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Cards/CardLineChart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Cards/CardPageVisits.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Cards/CardProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Cards/CardSettings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Cards/CardSocialTraffic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Cards/CardStats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Cards/CardTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Dropdowns/IndexDropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Dropdowns/NotificationDropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Dropdowns/PagesDropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Dropdowns/TableDropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Dropdowns/UserDropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Footers/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Footers/FooterAdmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Footers/FooterSmall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Headers/HeaderStats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Maps/MapExample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Navbars/AdminNavbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Navbars/IndexNavbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/PageChange/PageChange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Sidebar/Sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/layouts/Admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/layouts/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/404.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/_app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/_document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/_error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/admin/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/admin/maps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/admin/settings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/admin/tables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/auth/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/auth/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/landing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/angular.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/bootstrap.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/brand/apple-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/brand/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/component-btn-pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/component-btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/component-info-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/component-info-card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/component-menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/component-profile-card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/documentation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/img-1-1000x600.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/landing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/pattern_nextjs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/react.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/register_bg_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/sketch.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/team-1-800x800.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/team-2-800x800.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/team-3-800x800.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/team-4-470x470.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/vue.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/styles/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/styles/tailwind.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/public/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/angular.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/apple-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/bootstrap.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/component-btn-pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/component-btn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/component-info-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/component-info-card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/component-menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/component-profile-card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/documentation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/google.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/ill_header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/landing.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/login.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/pattern_react.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/react.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/register_bg_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/register_bg_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/sketch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/team-1-800x800.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/team-2-800x800.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/team-3-800x800.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/team-4-470x470.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/img/vue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/styles/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/assets/styles/tailwind.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Cards/CardBarChart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Cards/CardLineChart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Cards/CardPageVisits.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Cards/CardProfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Cards/CardSettings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Cards/CardSocialTraffic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Cards/CardStats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Cards/CardTable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Dropdowns/IndexDropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Dropdowns/NotificationDropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Dropdowns/PagesDropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Dropdowns/TableDropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Dropdowns/UserDropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Footers/Footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Footers/FooterAdmin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Footers/FooterSmall.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Headers/HeaderStats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Maps/MapExample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Navbars/AdminNavbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Navbars/AuthNavbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Navbars/IndexNavbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/components/Sidebar/Sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/layouts/Admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/layouts/Auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/views/Index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/views/Landing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/views/Profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/views/admin/Dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/views/admin/Maps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/views/admin/Settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/views/admin/Tables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/views/auth/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/src/views/auth/Register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starter/tailwind.config.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,16 +172,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/next-client/pages/auth/register.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/server/server.js" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2L9NdiIZSxHvk4pzikZ7oFccntC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -43,7 +212,19 @@
       <workItem from="1675279446335" duration="3925000" />
       <workItem from="1675437565095" duration="15616000" />
       <workItem from="1675523060425" duration="280000" />
+      <workItem from="1675523377350" duration="1721000" />
+      <workItem from="1675693287174" duration="10254000" />
+      <workItem from="1675878392214" duration="7404000" />
+      <workItem from="1675961228018" duration="3497000" />
     </task>
+    <task id="LOCAL-00001" summary="workspace">
+      <created>1675523414110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675523414111</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -59,5 +240,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/next-client/components/Footers/FooterSmall.js</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

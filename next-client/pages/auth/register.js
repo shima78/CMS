@@ -4,21 +4,26 @@ import {useState} from 'react';
 
 import Auth from "layouts/Auth.js";
 import axios from "axios";
+import {toast} from  "react-toastify";
 
 export default function Register() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [name, setName] = useState(null)
+  const [email, setEmail] = useState(null)
+  const [password, setPassword] = useState(null)
 
   const handleSubmit =  async (e) => {
     e.preventDefault()
     console.table({name, email, password})
-    const {data} = await axios.post("http://localhost:5000/api/register", {
-      name,
-      email,
-      password
-    })
-    console.log(data)
+    try {
+      const {resp} = await axios.post("http://localhost:5000/api/register", {
+        name,
+        email,
+        password
+      })
+      toast.success("با موفقیت ثبت شد. لطفا وارد شوید")
+    } catch (err){
+      toast.error(err.response.data)
+    }
   }
   return (
       <>

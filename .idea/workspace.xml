@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="user model">
-      <change afterPath="$PROJECT_DIR$/server/utils/auth.js" afterDir="false" />
+    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="register with notifications and error handling">
+      <change afterPath="$PROJECT_DIR$/next-client/context/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/auth/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/pages/auth/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/auth/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +25,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/next-client/pages/auth/register.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/server/utils/auth.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/next-client/context/index.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/server/models/user.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/server/server.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/server/controllers/auth.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2L9NdiIZSxHvk4pzikZ7oFccntC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -37,6 +58,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -63,7 +85,7 @@
       <workItem from="1675523377350" duration="1721000" />
       <workItem from="1675693287174" duration="10254000" />
       <workItem from="1675878392214" duration="7404000" />
-      <workItem from="1675961228018" duration="8082000" />
+      <workItem from="1675961228018" duration="27653000" />
     </task>
     <task id="LOCAL-00001" summary="workspace">
       <created>1675523414110</created>
@@ -86,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675969570433</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="register with notifications and error handling">
+      <created>1675977295967</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675977295967</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +137,8 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="Project Refactor, switch to next.js, mongoDB added" />
     <MESSAGE value="user model" />
-    <option name="LAST_COMMIT_MESSAGE" value="user model" />
+    <MESSAGE value="register with notifications and error handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="register with notifications and error handling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

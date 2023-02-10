@@ -1,11 +1,48 @@
-import React from "react";
-import Link from "next/link";
+import React, {useState, useContext, useEffect} from "react";
+import {Context} from "../../context/index"
 
 // layout for page
 
 import Auth from "layouts/Auth.js";
+import axios from "axios";
+import {toast} from  "react-toastify";
+import {useRouter} from "next/router"
 
 export default function Login() {
+  const [email, setEmail] = useState(null)
+  const [password, setPassword] = useState(null)
+  const [loading, setLoading] = useState(false)
+
+  //state
+  const {state, dispatch} = useContext(Context)
+  const router = useRouter()
+  const {user} = state
+  const handleSubmit =  async (e) => {
+    e.preventDefault()
+
+    try {
+      setLoading(true);
+      //process.env.NEXT_PUBLIC_API+
+      const {data} = await axios.post("/api/login", {
+        email,
+        password
+      })
+      toast.success("در حال ورود")
+      dispatch({
+        type : "LOGIN",
+        payload : data
+      })
+      window.localStorage.setItem('user', JSON.stringify(data))
+
+      //redirect
+      router.push("/landing")
+      setLoading(false)
+    } catch (err){
+      toast.error(err.response.data)
+      setLoading(false)
+    }
+  }
+
   return (
       <>
         <div className="container mx-auto px-4 h-full">
@@ -15,7 +52,7 @@ export default function Login() {
                 <div className="rounded-t mb-0 px-6 py-6">
                   <div className="text-center mb-3">
                     <h6 className="text-blueGray-500 text-sm font-bold">
-                      ورود با
+                      ثبت نام با
                     </h6>
                   </div>
                   <div className="btn-wrapper text-center">
@@ -48,18 +85,24 @@ export default function Login() {
                   <div className="text-blueGray-400 text-center mb-3 font-bold">
                     <small>ورود با اطلاعات کاربری</small>
                   </div>
-                  <form>
+                  <form onSubmit={handleSubmit}>
+
                     <div className="relative w-full mb-3">
                       <label
                           className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                           htmlFor="grid-password"
+
                       >
-                        اییمل
+                        ایمیل
                       </label>
                       <input
                           type="email"
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           placeholder="ایمیل"
+                          value={email}
+                          onChange={(e)=> setEmail(e.target.value)}
+                          required
+
                       />
                     </div>
 
@@ -74,50 +117,24 @@ export default function Login() {
                           type="password"
                           className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                           placeholder="رمز عبور"
+                          value={password}
+                          onChange={(e)=> setPassword(e.target.value)}
+                          required
                       />
                     </div>
-                    {/*<div>*/}
-                    {/*  <label className="inline-flex items-center cursor-pointer">*/}
-                    {/*    <input*/}
-                    {/*      id="customCheckLogin"*/}
-                    {/*      type="checkbox"*/}
-                    {/*      className="form-checkbox border-0 rounded text-blueGray-700 ml-1 w-5 h-5 ease-linear transition-all duration-150"*/}
-                    {/*    />*/}
-                    {/*    <span className="ml-2 text-sm font-semibold text-blueGray-600">*/}
-                    {/*      Remember me*/}
-                    {/*    </span>*/}
-                    {/*  </label>*/}
-                    {/*</div>*/}
+
 
                     <div className="text-center mt-6">
-
                       <button
                           className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                          type="button"
-
+                          type="submit"
+                          disabled={loading}
                       >
-                        <Link href="/admin" >
-                          <a className="text-white">ورود</a>
-                        </Link>
+
+                        {loading? <i className="fas fa-spinner"/> : "ورود" }
                       </button>
                     </div>
                   </form>
-                </div>
-              </div>
-              <div className="flex flex-wrap mt-6 relative items-center">
-                <div className="w-1/2">
-                  <a
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                      className="text-blueGray-200"
-                  >
-                    <small>فراموشی رمز عبور</small>
-                  </a>
-                </div>
-                <div className="w-1/2 text-center ">
-                  <Link href="/auth/register" >
-                    <small ><a className="text-blueGray-200">ایجاد حساب کاربری جدید</a></small>
-                  </Link>
                 </div>
               </div>
             </div>
@@ -126,6 +143,5 @@ export default function Login() {
       </>
   );
 }
-
 
 Login.layout = Auth;

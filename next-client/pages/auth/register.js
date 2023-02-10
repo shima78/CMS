@@ -1,28 +1,46 @@
 import React from "react";
-import {useState} from 'react';
+import {useState, useEffect, useContext} from 'react';
+import {Context} from '../../context'
+import {useRouter} from 'next/router'
+
 // layout for page
 
 import Auth from "layouts/Auth.js";
 import axios from "axios";
 import {toast} from  "react-toastify";
 
+
+
 export default function Register() {
   const [name, setName] = useState(null)
   const [email, setEmail] = useState(null)
   const [password, setPassword] = useState(null)
-
+  const [loading, setLoading] = useState(false)
+  const {state, dispatch } = useContext(Context)
+  const {user} = state
+  const router = useRouter()
+  useEffect(() =>{
+    if(user !== null){
+      router.push("/landing")
+    }
+  }, [user])
   const handleSubmit =  async (e) => {
     e.preventDefault()
     console.table({name, email, password})
     try {
-      const {resp} = await axios.post("http://localhost:5000/api/register", {
+      setLoading(true);
+      console.log(process.env.NEXT_PUBLIC_API)
+      //process.env.NEXT_PUBLIC_API+
+      const {resp} = await axios.post("/api/register", {
         name,
         email,
         password
       })
       toast.success("با موفقیت ثبت شد. لطفا وارد شوید")
+      setLoading(false)
     } catch (err){
       toast.error(err.response.data)
+      setLoading(false)
     }
   }
   return (
@@ -126,8 +144,10 @@ export default function Register() {
                       <button
                           className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                           type="submit"
+                          disabled={loading}
                       >
-                        ساختن حساب کاربری
+
+                        {loading? <i className="fas fa-spinner"/> : "ساختن حساب کاربری" }
                       </button>
                     </div>
                   </form>

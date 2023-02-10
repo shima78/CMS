@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
-
+import {Provider} from "../context"
 import PageChange from "components/PageChange/PageChange.js";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -75,12 +75,14 @@ export default class MyApp extends App {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <title>داده فناوران هوشمند خوارزمی</title>
-          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
         </Head>
-        <Layout>
-          <ToastContainer rtl />
-          <Component {...pageProps} />
-        </Layout>
+        <Provider>
+          <Layout>
+            <ToastContainer rtl />
+            <Component {...pageProps} />
+          </Layout>
+        </Provider>
       </React.Fragment>
     );
   }

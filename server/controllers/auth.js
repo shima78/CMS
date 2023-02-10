@@ -1,6 +1,6 @@
 import User from "../models/user"
-import { hashPassword } from "../utils/auth"
-
+import { hashPassword, comparePassword } from "../utils/auth"
+import jwt from 'jsonwebtoken'
 export const register = async (req, res) => {
     try {
 
@@ -33,5 +33,45 @@ export const register = async (req, res) => {
     } catch (err) {
         console.log(err);
         return res.status(400).send("خطا. لطفا دوباره تلاش کنید");
+    }
+}
+export const login = async (req,res) => {
+    try{
+        //console.log(req.body)
+
+        //check if user exists
+        const {email, password} = req.body
+        const user = await User.findOne({email}).exec()
+        if(!user) return res.status(400).send("کاربر یافت نشد")
+
+        //check password
+        const match = await comparePassword(password, user.password)
+
+        //create signed jwt
+
+        const token = jwt.sign(
+            {_id: user._id},
+            process.env.JWT_SECRET,
+            { expiresIn : "7d"})
+        //return user and token to client
+        user.password = undefined
+        res.cookie( "token" , token, {
+                httpOnly : true,
+                // secure : true
+            }
+        )
+        res.json(user)
+
+    }catch (err){
+        console.log(err)
+        return res.status(400).send("خطایی رخ داد. دوباره تلاش کنید")
+    }
+}
+export const logout = async (req, res) => {
+    try {
+        res.clearCookie('token', {path:'/landing'});
+        return res.json({ message: "Signout success" });
+    } catch (err) {
+        console.log(err);
     }
 };

@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="register with notifications and error handling">
-      <change afterPath="$PROJECT_DIR$/next-client/context/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next-client/server.js" afterDir="false" />
+    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="Login, Logout, Cookie">
+      <change afterPath="$PROJECT_DIR$/next-client/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/middlewares/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/auth/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/auth/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/auth/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/context/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
     </list>
@@ -85,7 +81,7 @@
       <workItem from="1675523377350" duration="1721000" />
       <workItem from="1675693287174" duration="10254000" />
       <workItem from="1675878392214" duration="7404000" />
-      <workItem from="1675961228018" duration="27653000" />
+      <workItem from="1675961228018" duration="29865000" />
     </task>
     <task id="LOCAL-00001" summary="workspace">
       <created>1675523414110</created>
@@ -115,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675977295967</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Login, Logout, Cookie">
+      <created>1676054210461</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676054210461</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +141,8 @@
     <MESSAGE value="Project Refactor, switch to next.js, mongoDB added" />
     <MESSAGE value="user model" />
     <MESSAGE value="register with notifications and error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="register with notifications and error handling" />
+    <MESSAGE value="Login, Logout, Cookie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login, Logout, Cookie" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

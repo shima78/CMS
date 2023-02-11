@@ -16,8 +16,8 @@ const UserRoute = ({ children }) => {
     const fetchUser = async () => {
         try {
             const { data } = await axios.get("/api/current-user");
-            //   console.log(data);
-            if (data.ok) setOk(true);
+              // console.log(data.ok );
+            if (data.ok && JSON.parse(window.localStorage.getItem("user")).role.includes("Admin")) setOk(true);
         } catch (err) {
             console.log(err);
             setOk(false);

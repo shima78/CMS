@@ -725,6 +725,9 @@ select {
   .container {
     max-width: 768px;
   }
+  .myAdminLayout {
+    margin-right: 16rem;
+  }
 }
 
 @media (min-width: 1024px) {

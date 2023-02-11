@@ -8,9 +8,9 @@ import FooterSmall from "components/Footers/FooterSmall.js";
 export default function Auth({ children }) {
   return (
     <>
-      <Navbar transparent />
+      <Navbar  />
       <main>
-        <section className="relative w-full h-full py-40 min-h-screen">
+        <section className="relative w-full h-full py-20 min-h-screen">
           <div
             className="absolute top-0 w-full h-full bg-blueGray-800 bg-no-repeat bg-full"
             style={{

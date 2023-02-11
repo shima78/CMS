@@ -35,10 +35,15 @@ export default function Login() {
       window.localStorage.setItem('user', JSON.stringify(data))
 
       //redirect
-      router.push("/landing")
+      if(data.role.includes("Admin")) {
+        router.push("/admin/dashboard")
+      }
+      else {
+        router.push("/landing")
+      }
       setLoading(false)
     } catch (err){
-      toast.error(err.response.data)
+      toast.error(err.data)
       setLoading(false)
     }
   }

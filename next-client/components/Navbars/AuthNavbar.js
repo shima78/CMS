@@ -91,7 +91,9 @@ export default function Navbar(props) {
                         >خروج</span>
 
                       </li>
-                      <li className="flex items-center">
+
+                      { user.role.includes("Admin") &&
+                        <li className="flex items-center">
                         <Link
                             href="/admin/dashboard"
 
@@ -99,9 +101,9 @@ export default function Navbar(props) {
                           <a
                               className={
                                 "lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                              }>داشبورد</a>
+                              }>پنل ادمین</a>
                         </Link>
-                      </li>
+                      </li>}
                     </>
                 )
 

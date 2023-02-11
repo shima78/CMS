@@ -1,4 +1,8 @@
 import React from "react";
+import { useState, useContext } from "react";
+import { Context } from "../../context";
+import axios from "axios";
+import UserRoute from "../../components/routes/UserRoute"
 
 // components
 
@@ -12,25 +16,31 @@ import CardSocialTraffic from "components/Cards/CardSocialTraffic.js";
 import Admin from "layouts/Admin.js";
 
 export default function Dashboard() {
-  return (
-    <>
-      <div className="flex flex-wrap">
-        <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-          <CardLineChart />
+    // state
+    const {
+        state: { user },
+    } = useContext(Context);
+
+    return (
+        <UserRoute>
+                <div className="flex flex-wrap">
+                    <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
+                        <CardLineChart/>
+                    </div>
+            <div className="w-full xl:w-4/12 px-4">
+                <CardBarChart/>
+            </div>
         </div>
-        <div className="w-full xl:w-4/12 px-4">
-          <CardBarChart />
-        </div>
-      </div>
-      <div className="flex flex-wrap mt-4">
-        <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
-          <CardPageVisits />
-        </div>
-        <div className="w-full xl:w-4/12 px-4">
-          <CardSocialTraffic />
-        </div>
-      </div>
-    </>
+                <div className="flex flex-wrap mt-4">
+                    <div className="w-full xl:w-8/12 mb-12 xl:mb-0 px-4">
+                        <CardPageVisits />
+                    </div>
+                    <div className="w-full xl:w-4/12 px-4">
+                        <CardSocialTraffic />
+                    </div>
+                </div>
+        </UserRoute>
+
   );
 }
 

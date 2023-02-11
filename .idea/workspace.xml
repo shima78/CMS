@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="Login, Logout, Cookie">
-      <change afterPath="$PROJECT_DIR$/next-client/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/middlewares/index.js" afterDir="false" />
+    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="csrf protection">
+      <change afterPath="$PROJECT_DIR$/next-client/components/routes/UserRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/admin/builtInDashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/context/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/admin/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/auth/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middlewares/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middlewares/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,6 +37,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/next-client/pages/admin/dashboard.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/next-client/pages/auth/register.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/server/utils/auth.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/next-client/context/index.js" root0="SKIP_INSPECTION" />
@@ -81,7 +89,7 @@
       <workItem from="1675523377350" duration="1721000" />
       <workItem from="1675693287174" duration="10254000" />
       <workItem from="1675878392214" duration="7404000" />
-      <workItem from="1675961228018" duration="29865000" />
+      <workItem from="1675961228018" duration="37494000" />
     </task>
     <task id="LOCAL-00001" summary="workspace">
       <created>1675523414110</created>
@@ -118,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676054210461</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="csrf protection">
+      <created>1676056265122</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676056265122</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +157,8 @@
     <MESSAGE value="user model" />
     <MESSAGE value="register with notifications and error handling" />
     <MESSAGE value="Login, Logout, Cookie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login, Logout, Cookie" />
+    <MESSAGE value="csrf protection" />
+    <option name="LAST_COMMIT_MESSAGE" value="csrf protection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

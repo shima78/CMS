@@ -26,8 +26,8 @@ const userSchema = new Schema(
         },
         role:{
             type:[String],
-            default: ["Subscriber"],
-            enum: ["Subscriber", "instructor", "Admin"],
+            default: ["Student"],
+            enum: ["Student", "Admin"],
         },
         paymentSession : {},
     },

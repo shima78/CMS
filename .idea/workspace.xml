@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="route protection, admin dashboard beginner">
+    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="custom rtl dashboard">
+      <change afterPath="$PROJECT_DIR$/next-client/components/Headers/StudentHeaderStats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Navbars/StudentNavbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/components/Sidebar/StudentSidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/layouts/Student.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/admin/course/create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/pages/student/studentDashboard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Footers/FooterAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Footers/FooterAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Footers/FooterSmall.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Footers/FooterSmall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Headers/HeaderStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Headers/HeaderStats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/AdminNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/AdminNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/routes/UserRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/routes/UserRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/layouts/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/layouts/Admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/layouts/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/layouts/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/auth/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/styles/tailwind.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +87,7 @@
       <workItem from="1675523377350" duration="1721000" />
       <workItem from="1675693287174" duration="10254000" />
       <workItem from="1675878392214" duration="7404000" />
-      <workItem from="1675961228018" duration="41457000" />
+      <workItem from="1675961228018" duration="43495000" />
     </task>
     <task id="LOCAL-00001" summary="workspace">
       <created>1675523414110</created>
@@ -142,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676138986962</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="custom rtl dashboard">
+      <created>1676145029968</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676145029968</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +171,8 @@
     <MESSAGE value="Login, Logout, Cookie" />
     <MESSAGE value="csrf protection" />
     <MESSAGE value="route protection, admin dashboard beginner" />
-    <option name="LAST_COMMIT_MESSAGE" value="route protection, admin dashboard beginner" />
+    <MESSAGE value="custom rtl dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="custom rtl dashboard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

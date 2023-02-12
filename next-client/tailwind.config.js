@@ -12,6 +12,8 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
+      amber: colors.amber,
+      emerald: colors.emerald,
     },
     extend: {
       minHeight: {

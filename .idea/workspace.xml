@@ -1,151 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="custom rtl dashboard">
-      <change afterPath="$PROJECT_DIR$/next-client/components/Headers/StudentHeaderStats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next-client/components/Navbars/StudentNavbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next-client/components/Sidebar/StudentSidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next-client/layouts/Student.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next-client/pages/admin/course/create.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next-client/pages/student/studentDashboard.js" afterDir="false" />
+    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/CMS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/components/Headers/HeaderStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Headers/HeaderStats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/styles/tailwind.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/next-client/layouts/Admin.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/next-client/pages/admin/dashboard.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/next-client/pages/auth/register.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/server/utils/auth.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/next-client/context/index.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/server/models/user.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/server/server.js" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/server/controllers/auth.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectId" id="2L9NdiIZSxHvk4pzikZ7oFccntC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2Ld6saAUZEEe6ynfc4YgVDKWBDe" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/starter/src/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="I:\CMS\starter\src\assets\img" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2de67131-a9eb-46cf-88fa-e9f822b6f80c" name="Changes" comment="" />
-      <created>1675279443068</created>
+      <changelist id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="" />
+      <created>1676188822486</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1675279443068</updated>
-      <workItem from="1675279446335" duration="3925000" />
-      <workItem from="1675437565095" duration="15616000" />
-      <workItem from="1675523060425" duration="280000" />
-      <workItem from="1675523377350" duration="1721000" />
-      <workItem from="1675693287174" duration="10254000" />
-      <workItem from="1675878392214" duration="7404000" />
-      <workItem from="1675961228018" duration="43495000" />
+      <updated>1676188822486</updated>
+      <workItem from="1676188824489" duration="16269000" />
     </task>
-    <task id="LOCAL-00001" summary="workspace">
-      <created>1675523414110</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1675523414111</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Project Refactor, switch to next.js, mongoDB added">
-      <created>1675968942086</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1675968942086</updated>
-    </task>
-    <task id="LOCAL-00003" summary="user model">
-      <created>1675969570433</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1675969570433</updated>
-    </task>
-    <task id="LOCAL-00004" summary="register with notifications and error handling">
-      <created>1675977295967</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1675977295967</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Login, Logout, Cookie">
-      <created>1676054210461</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1676054210461</updated>
-    </task>
-    <task id="LOCAL-00006" summary="csrf protection">
-      <created>1676056265122</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1676056265122</updated>
-    </task>
-    <task id="LOCAL-00007" summary="route protection, admin dashboard beginner">
-      <created>1676138986962</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1676138986962</updated>
-    </task>
-    <task id="LOCAL-00008" summary="custom rtl dashboard">
-      <created>1676145029968</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1676145029968</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,28 +60,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="workspace" />
-    <MESSAGE value="Project Refactor, switch to next.js, mongoDB added" />
-    <MESSAGE value="user model" />
-    <MESSAGE value="register with notifications and error handling" />
-    <MESSAGE value="Login, Logout, Cookie" />
-    <MESSAGE value="csrf protection" />
-    <MESSAGE value="route protection, admin dashboard beginner" />
-    <MESSAGE value="custom rtl dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="custom rtl dashboard" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/next-client/components/Footers/FooterSmall.js</url>
-          <line>2</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

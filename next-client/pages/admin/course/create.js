@@ -3,6 +3,7 @@ import { useState, useContext, useEffect } from "react";
 import { Context } from "../../../context";
 import axios from "axios";
 import UserRoute from "../../../components/routes/UserRoute"
+import {toast} from "react-toastify"
 
 // components
 
@@ -71,9 +72,18 @@ export default function Dashboard() {
         //
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(values);
+        try {
+            // console.log(values);
+            const { data } = await axios.post("/api/course", {
+                ...values,
+            });
+            toast("با موفقیت ایجاد شد.");
+
+        } catch (err) {
+            toast(err.response.data);
+        }
     };
 
 
@@ -106,6 +116,7 @@ export default function Dashboard() {
                                         placeholder="عنوان"
                                         value={values.name}
                                         onChange={handleChange}
+                                        required
                                     />
                                 </div>
                             </div>
@@ -124,6 +135,7 @@ export default function Dashboard() {
                                         placeholder="مدت زمان"
                                         value={values.duration}
                                         onChange={handleChange}
+                                        required
                                     />
                                 </div>
                             </div>
@@ -139,9 +151,10 @@ export default function Dashboard() {
                                         name="price"
                                         type="text"
                                         className="border-0 px-3 py-3 placeholder-blueGray-400 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        placeholder="عنوان"
+                                        placeholder="0"
                                         value={values.price}
                                         onChange={handleChange}
+                                        required
                                     />
                                 </div>
                             </div>
@@ -158,7 +171,6 @@ export default function Dashboard() {
                                         <input type="checkbox"
                                                name="free"
                                                onChange={handleChange}
-
                                         />
                                             <span className="slider round"/>
                                     </label>
@@ -189,6 +201,7 @@ export default function Dashboard() {
                                         rows="7"
                                         value={values.description}
                                         onChange={handleChange}
+                                        required
 
                                     />
                                 </div>
@@ -252,7 +265,16 @@ export default function Dashboard() {
                                 )
                             }
                         </div>
+                        <hr className="mt-6 border-b-1 border-blueGray-300" />
 
+                        <button
+                            className="btn-add  mt-4 px-6 py-3 text-white
+                                 font-bold uppercase   rounded shadow hover:shadow-md outline-none
+                                 focus:outline-none mr-1 ease-linear transition-all duration-150"
+                            type="submit"
+                        >
+                         ذخیره دوره
+                        </button>
 
                     </form>
                 </div>

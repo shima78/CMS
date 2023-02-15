@@ -9,7 +9,7 @@ import CardSocialTraffic from "components/Cards/CardSocialTraffic.js";
 
 // layout for page
 
-import Admin from "layouts/Admin.js";
+import Student from "layouts/student.js";
 
 export default function BuiltInDashboard() {
   return (
@@ -34,4 +34,4 @@ export default function BuiltInDashboard() {
   );
 }
 
-BuiltInDashboard.layout = Admin;
+BuiltInDashboard.layout = Student;

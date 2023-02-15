@@ -92,7 +92,7 @@ export default function Navbar(props) {
 
                       </li>
 
-                      { user.role.includes("Admin") &&
+                      {user && user.role.includes("Admin") &&
                         <li className="flex items-center">
                         <Link
                             href="/admin/dashboard"

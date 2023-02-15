@@ -99,6 +99,7 @@ export const fetchAllCourses = async (req,res) => {
         const courses = await Course.find({})
             .sort({ cratedAt: -1 })
             .exec()
+        console.log(courses)
         res.json(courses)
     }
     catch(err){

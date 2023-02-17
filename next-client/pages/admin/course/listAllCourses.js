@@ -8,16 +8,11 @@ import {toast} from "react-toastify"
 
 // components
 
-import CardLineChart from "components/Cards/CardLineChart.js";
-import CardBarChart from "components/Cards/CardBarChart.js";
-import CardPageVisits from "components/Cards/CardPageVisits.js";
-import CardSocialTraffic from "components/Cards/CardSocialTraffic.js";
 
 // layout for page
 
 import Admin from "layouts/Admin.js";
-import Navbar from "../../../components/Navbars/AuthNavbar";
-import Footer from "../../../components/Footers/Footer";
+
 
 export default function Dashboard() {
     // state

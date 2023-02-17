@@ -39,11 +39,12 @@ export default function Login() {
         router.push("/admin/dashboard")
       }
       else {
-        router.push("/landing")
+        router.push("/")
       }
       setLoading(false)
     } catch (err){
-      toast.error(err.data)
+      toast.error(err.response.data)
+
       setLoading(false)
     }
   }

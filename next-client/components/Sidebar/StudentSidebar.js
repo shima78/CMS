@@ -54,7 +54,7 @@ export default function Sidebar() {
                                             href="#pablo"
                                             className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
                                         >
-                                            Notus NextJS
+                                            داده فناوران هوشمند خوارزمی
                                         </a>
                                     </Link>
                                 </div>
@@ -64,7 +64,7 @@ export default function Sidebar() {
                                         className="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
                                         onClick={() => setCollapseShow("hidden")}
                                     >
-                                        <i className="fas fa-times"></i>
+                                        <i className="fas fa-times"/>
                                     </button>
                                 </div>
                             </div>
@@ -83,148 +83,39 @@ export default function Sidebar() {
                         {/* Divider */}
                         <hr className="my-4 md:min-w-full" />
                         {/* Heading */}
-                        <h6 className="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
-                            Admin Layout Pages
+                        <h6 className="md:min-w-full text-blueGray-500 text-sm uppercase font-bold block pt-1 pb-4 no-underline">
+                            مدیریت دوره ها
                         </h6>
                         {/* Navigation */}
 
                         <ul className="md:flex-col md:min-w-full flex flex-col list-none">
                             <li className="items-center">
-                                <Link href="/admin/dashboard">
+                                <Link href="/admin/course/listAllCourses">
                                     <a
-                                        href="#pablo"
+
                                         className={
-                                            "text-xs uppercase py-3 font-bold block " +
-                                            (router.pathname.indexOf("/admin/dashboard") !== -1
-                                                ? "text-lightBlue-500 hover:text-lightBlue-600"
-                                                : "text-blueGray-700 hover:text-blueGray-500")
+                                            "text-sm uppercase py-3 font-bold block " +
+                                            "text-blueGray-700 hover:text-blueGray-500"
                                         }
                                     >
                                         <i
                                             className={
-                                                "fas fa-tv mr-2 text-sm " +
-                                                (router.pathname.indexOf("/admin/dashboard") !== -1
-                                                    ? "opacity-75"
-                                                    : "text-blueGray-300")
+                                                "fas fa-list mr-2 text-sm " +
+                                                "text-blueGray-300"
                                             }
-                                        ></i>{" "}
-                                        Dashboard
+                                        />{" "}
+                                        دوره های من
                                     </a>
                                 </Link>
                             </li>
 
-                            <li className="items-center">
-                                <Link href="/admin/settings">
-                                    <a
-                                        href="#pablo"
-                                        className={
-                                            "text-xs uppercase py-3 font-bold block " +
-                                            (router.pathname.indexOf("/admin/settings") !== -1
-                                                ? "text-lightBlue-500 hover:text-lightBlue-600"
-                                                : "text-blueGray-700 hover:text-blueGray-500")
-                                        }
-                                    >
-                                        <i
-                                            className={
-                                                "fas fa-tools mr-2 text-sm " +
-                                                (router.pathname.indexOf("/admin/settings") !== -1
-                                                    ? "opacity-75"
-                                                    : "text-blueGray-300")
-                                            }
-                                        ></i>{" "}
-                                        Settings
-                                    </a>
-                                </Link>
-                            </li>
-
-                            <li className="items-center">
-                                <Link href="/admin/tables">
-                                    <a
-                                        href="#pablo"
-                                        className={
-                                            "text-xs uppercase py-3 font-bold block " +
-                                            (router.pathname.indexOf("/admin/tables") !== -1
-                                                ? "text-lightBlue-500 hover:text-lightBlue-600"
-                                                : "text-blueGray-700 hover:text-blueGray-500")
-                                        }
-                                    >
-                                        <i
-                                            className={
-                                                "fas fa-table mr-2 text-sm " +
-                                                (router.pathname.indexOf("/admin/tables") !== -1
-                                                    ? "opacity-75"
-                                                    : "text-blueGray-300")
-                                            }
-                                        ></i>{" "}
-                                        Tables
-                                    </a>
-                                </Link>
-                            </li>
-
-                            <li className="items-center">
-                                <Link href="/admin/maps">
-                                    <a
-                                        href="#pablo"
-                                        className={
-                                            "text-xs uppercase py-3 font-bold block " +
-                                            (router.pathname.indexOf("/admin/maps") !== -1
-                                                ? "text-lightBlue-500 hover:text-lightBlue-600"
-                                                : "text-blueGray-700 hover:text-blueGray-500")
-                                        }
-                                    >
-                                        <i
-                                            className={
-                                                "fas fa-map-marked mr-2 text-sm " +
-                                                (router.pathname.indexOf("/admin/maps") !== -1
-                                                    ? "opacity-75"
-                                                    : "text-blueGray-300")
-                                            }
-                                        ></i>{" "}
-                                        Maps
-                                    </a>
-                                </Link>
-                            </li>
                         </ul>
 
                         {/* Divider */}
                         <hr className="my-4 md:min-w-full" />
                         {/* Heading */}
-                        <h6 className="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
-                            Auth Layout Pages
-                        </h6>
-                        {/* Navigation */}
-
-                        <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
-                            <li className="items-center">
-                                <Link href="/auth/login">
-                                    <a
-                                        href="#pablo"
-                                        className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
-                                    >
-                                        <i className="fas fa-fingerprint text-blueGray-400 mr-2 text-sm"></i>{" "}
-                                        Login
-                                    </a>
-                                </Link>
-                            </li>
-
-                            <li className="items-center">
-                                <Link href="/auth/register">
-                                    <a
-                                        href="#pablo"
-                                        className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
-                                    >
-                                        <i className="fas fa-clipboard-list text-blueGray-300 mr-2 text-sm"></i>{" "}
-                                        Register
-                                    </a>
-                                </Link>
-                            </li>
-                        </ul>
-
-                        {/* Divider */}
-                        <hr className="my-4 md:min-w-full" />
-                        {/* Heading */}
-                        <h6 className="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
-                            No Layout Pages
+                        <h6 className="md:min-w-full text-blueGray-500 text-sm uppercase font-bold block pt-1 pb-4 no-underline">
+                            مدیریت کاربران
                         </h6>
                         {/* Navigation */}
 
@@ -233,16 +124,14 @@ export default function Sidebar() {
                                 <Link href="/profile">
                                     <a
                                         href="#pablo"
-                                        className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
+                                        className="text-blueGray-700 hover:text-blueGray-500 text-sm uppercase py-3 font-bold block"
                                     >
-                                        <i className="fas fa-user-circle text-blueGray-400 mr-2 text-sm"></i>{" "}
-                                        Profile Page
+                                        <i className="fas fa-user-circle text-blueGray-400 mr-2 text-sm"/>{" "}
+                                        پروفایل من
                                     </a>
                                 </Link>
                             </li>
                         </ul>
-
-
                     </div>
                 </div>
             </nav>

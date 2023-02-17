@@ -385,7 +385,7 @@ export default function Landing() {
             </div>
           </section>
           <section className="relative block py-24 lg:pt-0 bg-blueGray-800">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 mt-10">
               <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
                 <div className="w-full lg:w-6/12 px-4">
                   <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200">

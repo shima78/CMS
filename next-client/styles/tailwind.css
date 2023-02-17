@@ -2119,6 +2119,10 @@ select {
   height: 6rem;
 }
 
+.h-48 {
+  height: 14rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -4235,4 +4239,40 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.card {
+  width: 250px;
+  padding: 0rem;
+  height: 21rem;
+  border-radius: 20px ;
+}
+
+.cards {
+  max-width: 1200px;
+  display: grid;
+  gap: 0.5rem;
+
+}
+.card-img{
+  width: 250px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(4, 1fr); }
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

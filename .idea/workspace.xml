@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="create course backend and frontend v1">
-      <change afterPath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/admin/builtInDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/builtInDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Sidebar/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/styles/tailwind.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2Ld6saAUZEEe6ynfc4YgVDKWBDe" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -58,6 +60,8 @@
       <updated>1676188822486</updated>
       <workItem from="1676188824489" duration="16269000" />
       <workItem from="1676222540270" duration="16259000" />
+      <workItem from="1676640210200" duration="5003000" />
+      <workItem from="1676650195297" duration="3156000" />
     </task>
     <task id="LOCAL-00001" summary="create component UI">
       <created>1676222665031</created>
@@ -101,7 +105,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/course.js</url>
           <line>77</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -108,6 +108,25 @@ export default function Sidebar() {
                   </a>
                 </Link>
               </li>
+              <li className="items-center">
+                <Link href="/admin/course/listAllCourses">
+                  <a
+
+                      className={
+                          "text-sm uppercase py-3 font-bold block " +
+                          "text-blueGray-700 hover:text-blueGray-500"
+                      }
+                  >
+                    <i
+                        className={
+                            "fas fa-list mr-2 text-sm " +
+                            "text-blueGray-300"
+                        }
+                    />{" "}
+                    دوره های ساخته شده
+                  </a>
+                </Link>
+              </li>
 
             </ul>
 

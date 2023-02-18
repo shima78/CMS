@@ -99,8 +99,18 @@ export const fetchAllCourses = async (req,res) => {
         const courses = await Course.find({})
             .sort({ cratedAt: -1 })
             .exec()
-        console.log(courses)
         res.json(courses)
+    }
+    catch(err){
+        console.log(err)
+    }
+}
+
+export const fetchCourse = async (req,res) => {
+    try{
+        const course = await Course.findOne({slug : req.params.slug})
+            .exec()
+        res.json(course)
     }
     catch(err){
         console.log(err)

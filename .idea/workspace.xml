@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="landing page with courses">
+      <change afterPath="$PROJECT_DIR$/next-client/pages/admin/course/view/[slug].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Headers/StudentHeaderStats.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Headers/StudentHeaderStats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Sidebar/StudentSidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Sidebar/StudentSidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/pages/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/auth/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/student/studentDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/student/studentDashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/course.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +52,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\CMS\next-client\pages\admin\course\view" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,6 +69,7 @@
       <workItem from="1676222540270" duration="16259000" />
       <workItem from="1676640210200" duration="5003000" />
       <workItem from="1676650195297" duration="10163000" />
+      <workItem from="1676727967714" duration="5242000" />
     </task>
     <task id="LOCAL-00001" summary="create component UI">
       <created>1676222665031</created>

@@ -44,7 +44,7 @@ export default function Dashboard() {
                                     {courses && courses.map((course) => (
                                         <div class="card shadow-lg zoom
                                          duration-500 transform hover:scale-125 hover:shadow-xl ml-3 mb-3">
-                                            <a href="#">
+                                            <a href={"/admin/course/view/"+ course.slug}>
                                                     <img src="https://images.unsplash.com/photo-1646753522408-077ef9839300?ixlib=rb-1
                                                     .2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=
                                                     crop&w=500&q=60" alt="Product" class="h-48 card-img object-cover bg-white " />

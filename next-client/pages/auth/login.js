@@ -39,7 +39,7 @@ export default function Login() {
         router.push("/admin/dashboard")
       }
       else {
-        router.push("/")
+        router.push("/student/studentDashboard")
       }
       setLoading(false)
     } catch (err){

@@ -137,36 +137,51 @@ export default function Landing() {
                     cards
                     justify-items-center justify-center py-2 px-2 mt-0 mb-5">
                       {courses && courses.map((course) => (
-                          <div className="card shadow-lg zoom bg-white
-                                         duration-500 transform hover:scale-125 hover:shadow-xl ml-3 mb-3">
-                            <a href="#">
-                              <img src="https://images.unsplash.com/photo-1646753522408-077ef9839300?ixlib=rb-1
-                                                    .2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=
-                                                    crop&w=500&q=60" alt="Product"
-                                   className="h-48 card-img object-cover bg-white "/>
-                              <div className="px-4 py-3 w-72">
-                                <span className="text-gray-400 mr-3 uppercase text-xs">Brand</span>
-                                <p className="text-lg font-bold text-black truncate block capitalize">{course.name}</p>
-                                <div className="flex items-center">
-                                  <p className="text-lg font-semibold text-black cursor-auto my-3">{course.free}</p>
-                                  <del>
-                                    <p className="text-sm text-gray-600 cursor-auto ml-2">{course.price}</p>
-                                  </del>
-                                  <div className="mr-auto">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                         className="bi bi-bag-plus" viewBox="0 0 16 16">
-                                      <path fill-rule="evenodd"
-                                            d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"/>
+                          <div className="py-6 px-6 w-full relative zoom">
+                            <a href={"/admin/course/view/"+ course.slug}>
+                              <div className="flex card-landing bg-white shadow-lg rounded-lg ">
+                                <div className="max-w-150-px bg-cover  h-48">
+                                  <img src="/img/ai_course.jpg" alt="Product" className="h-48 rounded-lg  object-cover bg-white "/>
+                                </div>
+                                <div className=" p-4">
+                                  <h1 className="text-gray-900 font-bold text-2xl">{course.name}</h1>
+                                  <p className="mt-2 text-gray-600 text-sm">{course.duration}</p>
+                                  <div className="flex item-center mt-2">
+                                    <svg className="w-5 h-5 fill-current text-gray-700" viewBox="0 0 24 24">
                                       <path
-                                          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                          d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"/>
                                     </svg>
+                                    <svg className="w-5 h-5 fill-current text-gray-700" viewBox="0 0 24 24">
+                                      <path
+                                          d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"/>
+                                    </svg>
+                                    <svg className="w-5 h-5 fill-current text-gray-700" viewBox="0 0 24 24">
+                                      <path
+                                          d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"/>
+                                    </svg>
+                                    <svg className="w-5 h-5 fill-current text-gray-500" viewBox="0 0 24 24">
+                                      <path
+                                          d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"/>
+                                    </svg>
+                                    <svg className="w-5 h-5 fill-current text-gray-500" viewBox="0 0 24 24">
+                                      <path
+                                          d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"/>
+                                    </svg>
+                                  </div>
+                                  <div className="flex item-center justify-between mt-3">
+
+                                    {course.free &&
+                                        <h1
+                                            className="text-gray-700 font-bold text-xl">رایگان</h1>}
+                                    {!course.free &&
+                                        <h1
+                                            className="text-gray-700 font-bold text-xl">{course.price}</h1>}
+
                                   </div>
                                 </div>
                               </div>
                             </a>
                           </div>
-
-
                       ))}
                     </section>
                   </div>

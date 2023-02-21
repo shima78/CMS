@@ -4242,10 +4242,9 @@ input:checked + .slider:before {
 }
 
 .card {
-  width: 250px;
-  padding: 0rem;
-  height: 21rem;
-  border-radius: 20px ;
+  min-width: 15rem;
+  max-width: 25rem;
+
 }
 
 .cards {
@@ -4255,18 +4254,18 @@ input:checked + .slider:before {
 
 }
 .card-img{
-  width: 250px;
-  border-radius: 20px 20px 0px 0px;
+  min-width: 200px;
+  max-width: 200px;
 }
 
 /* Screen larger than 600px? 2 column */
-@media (min-width: 600px) {
+@media (min-width: 850px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* Screen larger than 900px? 3 columns */
 @media (min-width: 900px) {
-  .cards { grid-template-columns: repeat(4, 1fr); }
+  .cards { grid-template-columns: repeat(3, 1fr); }
 }
 
 .zoom {
@@ -4275,4 +4274,8 @@ input:checked + .slider:before {
 
 .zoom:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.card-landing{
+  min-width: 20rem;
+  max-width: 25rem;
 }

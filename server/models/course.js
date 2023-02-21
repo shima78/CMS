@@ -9,6 +9,9 @@ const courseSchema = new mongoose.Schema(
             maxlength: 320,
             required: true,
         },
+        duration: {
+            type: String,
+        },
         slug: {
             type: String,
             lowercase: true,

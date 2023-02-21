@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="landing page with courses">
-      <change afterPath="$PROJECT_DIR$/next-client/pages/admin/course/view/[slug].js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/public/img/ai_course.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/auth/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/view/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/view/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/styles/tailwind.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/course.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +40,15 @@
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2Ld6saAUZEEe6ynfc4YgVDKWBDe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -70,6 +74,7 @@
       <workItem from="1676640210200" duration="5003000" />
       <workItem from="1676650195297" duration="10163000" />
       <workItem from="1676727967714" duration="5242000" />
+      <workItem from="1676963681831" duration="6425000" />
     </task>
     <task id="LOCAL-00001" summary="create component UI">
       <created>1676222665031</created>
@@ -117,6 +122,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="create component UI" />
     <MESSAGE value="create course backend and frontend v1" />
     <MESSAGE value="list all courses" />

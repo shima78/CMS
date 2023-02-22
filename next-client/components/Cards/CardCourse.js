@@ -1,15 +1,13 @@
 import {useState, useEffect} from 'react'
 import {useRouter} from "next/router"
-import UserRoute from "../../../../components/routes/UserRoute"
-import Admin from "../../../../layouts/Admin";
 import axios from "axios"
 
-export default function CourseView() {
-    const [course, setCourse] = useState({})
+// components
 
+export default function CardCourse() {
+    const [course, setCourse] = useState({})
     const router = useRouter()
     const {slug} = router.query
-
     useEffect( () => {
         loadCourse();
     }, []);
@@ -26,8 +24,7 @@ export default function CourseView() {
 
     };
     return (
-        <UserRoute>
-
+        <>
             <div className="py-6 relative ">
                 <div className="flex bg-white shadow-lg rounded-lg grid grid-cols-2">
                     <div className="w-2/3 p-4">
@@ -54,25 +51,12 @@ export default function CourseView() {
                             <p className="mt-2 text-gray-600 ">{course.price}</p>
                         }
 
-
-
-                        {/*<div className="flex item-center justify-between mt-3">*/}
-                        {/*    <h1 className="text-gray-700 font-bold text-xl">{course.prerequisites}</h1>*/}
-                        {/*    <button className="px-3 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded">Add*/}
-                        {/*        to Card*/}
-                        {/*    </button>*/}
-                        {/*</div>*/}
                     </div>
                     <div className=" w-1/3 left-0 bg-cover rounded-lg bg-black h-full">
                         <img src="/img/ai_course.jpg" alt="Product" className="h-full rounded-lg w-full object-cover bg-white "/>
                     </div>
                 </div>
             </div>
-
-
-
-        </UserRoute>
-    )
+        </>
+    );
 }
-
-CourseView.layout = Admin;

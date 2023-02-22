@@ -48,7 +48,7 @@ export default function CardCoursePreview(props) {
                                   className="text-gray-700 font-bold text-xl">رایگان</h1>}
                           {!course.free &&
                               <h1
-                                  className="text-gray-700 font-bold text-xl">{course.price}</h1>}
+                                  className="text-gray-700 font-bold text-xl">{course.price} تومان</h1>}
 
                       </div>
                   </div>

@@ -1,10 +1,17 @@
-import {useState, useEffect} from 'react'
+import {useState,useContext, useEffect} from 'react'
 import {useRouter} from "next/router"
 import axios from "axios"
+import Link from "next/link";
+import {Context} from "../../context"
+import axios from "axios"
 
+import {toast} from "react-toastify"
 // components
 
 export default function CardCourse(props) {
+    const {state, dispatch} = useContext(Context)
+    const  router  = useRouter()
+    const { user } = state
     const course = props.course
     return (
         <>
@@ -34,7 +41,16 @@ export default function CardCourse(props) {
 
                     </div>
                     <div className="w-1/3 p-4">
+                        <button
+                            className="bg-black text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                            type="button"
+                        >
+                            <h1 className="text-gray-900 font-bold mt-5 text-lg">button</h1>
+                            <i className="fab fa-github">دکه</i>
+                        </button>
 
+                        <h1 className="text-gray-900 font-bold mt-5 text-lg">پیش نیاز ها</h1>
+                        <p className="mt-2 text-gray-600 ">{course.prerequisites}</p>
                         <h1 className="text-gray-900 font-bold mt-5 text-lg">پیش نیاز ها</h1>
                         <p className="mt-2 text-gray-600 ">{course.prerequisites}</p>
 
@@ -44,7 +60,22 @@ export default function CardCourse(props) {
                             <p className="mt-2 text-gray-600 ">{inst}</p>))
                         }
 
+                        {user?  <button
+                                className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                                type="button"
+                            >
+                                <i className="fab fa-github">دکه</i>
+                            </button>:
+                            <button
+                                className={"bg-emerald-500 w-6/12 primary"}
+
+                            >
+                                برای ثبت نام وارد حساب کاربری شوید
+                            </button>
+                        }
+
                     </div>
+
                 </div>
             </div>
         </>

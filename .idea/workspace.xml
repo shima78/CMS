@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="SSR course page">
+    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="single course with SSR">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCourse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCourseAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCourseAdmin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCoursePreview.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCoursePreview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/IndexNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/IndexNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/pages/course/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/course/[slug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +71,7 @@
       <workItem from="1676640210200" duration="5003000" />
       <workItem from="1676650195297" duration="10163000" />
       <workItem from="1676727967714" duration="5242000" />
-      <workItem from="1676963681831" duration="15402000" />
+      <workItem from="1676963681831" duration="17251000" />
     </task>
     <task id="LOCAL-00001" summary="create component UI">
       <created>1676222665031</created>
@@ -133,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677076080479</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="single course with SSR">
+      <created>1677078994942</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677078994942</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +163,9 @@
     <MESSAGE value="Course Card" />
     <MESSAGE value="SSR for list of courses" />
     <MESSAGE value="SSR course page" />
-    <option name="LAST_COMMIT_MESSAGE" value="SSR course page" />
+    <MESSAGE value="song course with SSR" />
+    <MESSAGE value="single course with SSR" />
+    <option name="LAST_COMMIT_MESSAGE" value="single course with SSR" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

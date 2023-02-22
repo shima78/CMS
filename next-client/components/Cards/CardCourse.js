@@ -1,6 +1,5 @@
 import {useState,useContext, useEffect} from 'react'
 import {useRouter} from "next/router"
-import axios from "axios"
 import Link from "next/link";
 import {Context} from "../../context"
 import axios from "axios"
@@ -8,14 +7,22 @@ import axios from "axios"
 import {toast} from "react-toastify"
 // components
 
-export default function CardCourse(props) {
-    const {state, dispatch} = useContext(Context)
+export default function CardCourse(
+    {
+        course,
+        loading,
+        user,
+        handlePaidEnrollment,
+        handleFreeEnrollment,
+        enrolled,
+        setEnrolled,
+    }
+) {
     const  router  = useRouter()
-    const { user } = state
-    const course = props.course
+
     return (
         <>
-            <div className=" relative mt-8 bg-white justify-center rounded-lg">
+            <div className=" relative mt-8 bg-white justify-center rounded-lg mx-4">
                 <div className="justify-center flex py-5">
                     <h1 className="text-gray-900 font-bold text-2xl justify-center">{course.name}</h1>
                 </div>
@@ -41,36 +48,34 @@ export default function CardCourse(props) {
 
                     </div>
                     <div className="w-1/3 p-4">
-                        <button
-                            className="bg-black text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                            type="button"
-                        >
-                            <h1 className="text-gray-900 font-bold mt-5 text-lg">button</h1>
-                            <i className="fab fa-github">دکه</i>
-                        </button>
 
-                        <h1 className="text-gray-900 font-bold mt-5 text-lg">پیش نیاز ها</h1>
-                        <p className="mt-2 text-gray-600 ">{course.prerequisites}</p>
                         <h1 className="text-gray-900 font-bold mt-5 text-lg">پیش نیاز ها</h1>
                         <p className="mt-2 text-gray-600 ">{course.prerequisites}</p>
 
                         <h1 className="text-gray-900 font-bold mt-5 text-lg">مدرسین</h1>
 
-                        {course.instructors && course.instructors.map((inst) => (
-                            <p className="mt-2 text-gray-600 ">{inst}</p>))
+                        {course.instructors && course.instructors.map((inst, index) => (
+                            <p key={index} className="mt-2 text-gray-600 ">{inst}</p>))
                         }
+                        <br/>
 
-                        {user?  <button
-                                className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                                type="button"
-                            >
-                                <i className="fab fa-github">دکه</i>
-                            </button>:
+                        {user? <button
+                            className="bg-black px-6 pb-2 pt-2  text-white  font-normal h-10  items-center justify-center rounded-lg"
+                            type="button"
+                            disabled={loading}
+                            onClick={course.free ? handleFreeEnrollment : handlePaidEnrollment}
+                        >
+                            {enrolled.status ? "مشاهده محتوای دوره" : "ثبت نام"}
+                        </button> :
                             <button
-                                className={"bg-emerald-500 w-6/12 primary"}
-
+                                className="bg-black px-6 pb-2 pt-2  text-white  font-normal h-10  items-center justify-center rounded-lg"
+                                type="button"
+                                disabled={loading}
                             >
-                                برای ثبت نام وارد حساب کاربری شوید
+                                <a
+                                href={'/auth/login'}
+                                >برای ثبت نام در دوره وارد شوید</a>
+
                             </button>
                         }
 
@@ -82,12 +87,5 @@ export default function CardCourse(props) {
     );
 }
 
-export async function getServerSideProps() {
-    const {data} = await axios.get(`${process.env.API}/fetch-course`)
-    return {
-        props:{
-            course : data
-        },
-    }
-}
+
 

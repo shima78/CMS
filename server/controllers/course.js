@@ -1,76 +1,6 @@
-// import AWS from "aws-sdk";
-// import { nanoid } from "nanoid";
 import Course from "../models/course";
 import slugify from "slugify";
-//
-// const awsConfig = {
-//     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-//     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-//     region: process.env.AWS_REGION,
-//     apiVersion: process.env.AWS_API_VERSION,
-// };
-
-// const S3 = new AWS.S3(awsConfig);
-
-// export const uploadImage = async (req, res) => {
-//     // console.log(req.body);
-//     try {
-//         const { image } = req.body;
-//         if (!image) return res.status(400).send("No image");
-//
-//         // prepare the image
-//         const base64Data = new Buffer.from(
-//             image.replace(/^data:image\/\w+;base64,/, ""),
-//             "base64"
-//         );
-//
-//         const type = image.split(";")[0].split("/")[1];
-//
-//         // image params
-//         const params = {
-//             Bucket: "edemy-bucket",
-//             Key: `${nanoid()}.${type}`,
-//             Body: base64Data,
-//             ACL: "public-read",
-//             ContentEncoding: "base64",
-//             ContentType: `image/${type}`,
-//         };
-//
-//         // upload to s3
-//         S3.upload(params, (err, data) => {
-//             if (err) {
-//                 console.log(err);
-//                 return res.sendStatus(400);
-//             }
-//             console.log(data);
-//             res.send(data);
-//         });
-//     } catch (err) {
-//         console.log(err);
-//     }
-// };
-
-// export const removeImage = async (req, res) => {
-//     try {
-//         const { image } = req.body;
-//         // image params
-//         const params = {
-//             Bucket: image.Bucket,
-//             Key: image.Key,
-//         };
-//
-//         // send remove request to s3
-//         S3.deleteObject(params, (err, data) => {
-//             if (err) {
-//                 console.log(err);
-//                 res.sendStatus(400);
-//             }
-//             res.send({ ok: true });
-//         });
-//     } catch (err) {
-//         console.log(err);
-//     }
-// };
+import User from "../models/user";
 
 export const create = async (req, res) => {
     console.log("CREATE COURSE", req.body);
@@ -116,3 +46,43 @@ export const fetchCourse = async (req,res) => {
         console.log(err)
     }
 }
+
+export const checkEnrollment = async (req, res) => {
+    const { courseId } = req.params;
+    // find courses of the currently logged-in user
+    const user = await User.findById(req.auth._id).exec();
+    // check if course_id is found in user courses array
+    let ids = [];
+    let length = user.courses && user.courses.length;
+    for (let i = 0; i < length; i++) {
+        ids.push(user.courses[i].toString());
+    }
+    res.json({
+        status: ids.includes(courseId),
+        course: await Course.findById(courseId).exec(),
+    });
+};
+
+export const freeEnrollment = async (req, res) => {
+    try {
+        // check if course is free or paid
+        const course = await Course.findById(req.params.courseId).exec();
+        if (!course.free) return;
+
+        const result = await User.findByIdAndUpdate(
+            req.auth._id,
+            {
+                $addToSet: { courses: course._id },
+            },
+            { new: true }
+        ).exec();
+        console.log(result);
+        res.json({
+            message: "با موفقیت ثبت نام شدید!",
+            course,
+        });
+    } catch (err) {
+        console.log("خطایی رخ در ثبت نام رایگان رخ داد ", err);
+        return res.status(400).send("خطا. ثبت نام انجام نشد");
+    }
+};

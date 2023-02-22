@@ -4,8 +4,10 @@
     <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="single course with SSR">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCourse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCoursePreview.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCoursePreview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/pages/course/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/course/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/course.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,8 @@
       <workItem from="1676640210200" duration="5003000" />
       <workItem from="1676650195297" duration="10163000" />
       <workItem from="1676727967714" duration="5242000" />
-      <workItem from="1676963681831" duration="17251000" />
+      <workItem from="1676963681831" duration="17400000" />
+      <workItem from="1677085715075" duration="6429000" />
     </task>
     <task id="LOCAL-00001" summary="create component UI">
       <created>1676222665031</created>
@@ -136,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677078994942</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="single course with SSR">
+      <created>1677085572310</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677085572310</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,18 +182,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server/controllers/course.js</url>
-          <line>77</line>
+          <line>7</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/next-client/pages/index.js</url>
           <line>7</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/next-client/components/Cards/CardCourse.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

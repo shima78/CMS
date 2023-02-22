@@ -8,24 +8,25 @@ import Link from "next/link";
 import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
 import axios from "axios";
-export default function Landing() {
+export default function Landing(props) {
+  console.log(props.courses)
   // state
-  const [courses, setCourses] = useState([]);
-
-  useEffect( () => {
-    loadCourses();
-  }, []);
-
-  const loadCourses =  () => {
-    axios
-        .get("/api/fetch-all-courses")
-        .then((res) => {
-          setCourses(res.data);
-        }).catch((err) => {
-      console.log(err)
-    })
-
-  };
+  // const [courses, setCourses] = useState([]);
+  //
+  // useEffect( () => {
+  //   loadCourses();
+  // }, []);
+  //
+  // const loadCourses =  () => {
+  //   axios
+  //       .get("/api/fetch-all-courses")
+  //       .then((res) => {
+  //         setCourses(res.data);
+  //       }).catch((err) => {
+  //     console.log(err)
+  //   })
+  //
+  // };
 
   return (
       <>
@@ -136,7 +137,7 @@ export default function Landing() {
                         className="
                     cards
                     justify-items-center justify-center py-2 px-2 mt-0 mb-5">
-                      {courses && courses.map((course) => (
+                      {props.courses && props.courses.map((course) => (
                           <div className="py-6 px-6 w-full relative zoom">
                             <a href={"/admin/course/view/"+ course.slug}>
                               <div className="flex card-landing bg-white shadow-lg rounded-lg ">
@@ -486,4 +487,14 @@ export default function Landing() {
         <Footer />
       </>
   );
+}
+
+export async function getServerSideProps() {
+  const {data} = await axios.get(`${process.env.API}/fetch-all-courses`)
+  console.log(data)
+  return {
+    props:{
+      courses : data
+    },
+    }
 }

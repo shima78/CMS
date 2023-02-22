@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="course details admin panel">
-      <change afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCourse.js" afterDir="false" />
+    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="Course Card">
+      <change afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCourseAdmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next-client/utils/helper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/view/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/view/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +72,7 @@
       <workItem from="1676640210200" duration="5003000" />
       <workItem from="1676650195297" duration="10163000" />
       <workItem from="1676727967714" duration="5242000" />
-      <workItem from="1676963681831" duration="7326000" />
+      <workItem from="1676963681831" duration="9005000" />
     </task>
     <task id="LOCAL-00001" summary="create component UI">
       <created>1676222665031</created>
@@ -107,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676983776486</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Course Card">
+      <created>1677055547883</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677055547883</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,7 +140,8 @@
     <MESSAGE value="list all courses" />
     <MESSAGE value="landing page with courses" />
     <MESSAGE value="course details admin panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="course details admin panel" />
+    <MESSAGE value="Course Card" />
+    <option name="LAST_COMMIT_MESSAGE" value="Course Card" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -42,7 +42,7 @@ export default function Dashboard() {
                     cards
                     justify-items-center justify-center py-2 px-2 mt-10 mb-5">
                                     {courses && courses.map((course) => (
-                                        <CardCoursePreview  key={course.slug} course={course}/>
+                                        <CardCoursePreview admin={true} key={course.slug} course={course}/>
                                         ))}
                                     </section>
             </div>

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="SSR for list of courses">
-      <change afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCoursePreview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next-client/pages/course/[slug].js" afterDir="false" />
+    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="SSR course page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCourse.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCourseAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCourseAdmin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCoursePreview.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCoursePreview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/IndexNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/IndexNavbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/course/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/course/[slug].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/public/img/ai_course.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/public/img/ai_course.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/styles/tailwind.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +75,7 @@
       <workItem from="1676640210200" duration="5003000" />
       <workItem from="1676650195297" duration="10163000" />
       <workItem from="1676727967714" duration="5242000" />
-      <workItem from="1676963681831" duration="12894000" />
+      <workItem from="1676963681831" duration="15402000" />
     </task>
     <task id="LOCAL-00001" summary="create component UI">
       <created>1676222665031</created>
@@ -127,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677057178855</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="SSR course page">
+      <created>1677076080479</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677076080479</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +159,8 @@
     <MESSAGE value="course details admin panel" />
     <MESSAGE value="Course Card" />
     <MESSAGE value="SSR for list of courses" />
-    <option name="LAST_COMMIT_MESSAGE" value="SSR for list of courses" />
+    <MESSAGE value="SSR course page" />
+    <option name="LAST_COMMIT_MESSAGE" value="SSR course page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -168,6 +175,11 @@
           <line>7</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/next-client/components/Cards/CardCourse.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

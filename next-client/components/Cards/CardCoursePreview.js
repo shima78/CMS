@@ -6,10 +6,11 @@ import axios from "axios"
 
 export default function CardCoursePreview(props) {
     const course = props.course
+    const redirect  = props.admin ? "/admin/course/view/"+ course.slug : "/course/"+ course.slug
     return (
 
           <div className=" relative  mb-4 zoom bg-white " >
-              <a href={"/admin/course/view/"+ course.slug} >
+              <a href={redirect} >
                   <div className="flex card-landing  bg-white shadow-lg  ">
                       <div className="w-full bg-cover  h-48">
                           <img src="/img/ai_course.jpg"  alt="Product" className="h-48  w-full  "/>

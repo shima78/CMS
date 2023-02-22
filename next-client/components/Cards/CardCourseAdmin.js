@@ -25,7 +25,7 @@ export default function CardCourseAdmin() {
     };
     return (
         <>
-            <div className=" relative py-6 bg-white justify-center fle rounded-lg">
+            <div className=" relative py-6 bg-white justify-center m-8  rounded-lg">
                 <div className="justify-center flex py-5">
                     <h1 className="text-gray-900 font-bold text-2xl justify-center">{course.name}</h1>
                 </div>

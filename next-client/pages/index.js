@@ -139,7 +139,7 @@ export default function Landing(props) {
                     cards
                     justify-items-center justify-center py-2 px-2 mt-0 mb-5">
                       {props.courses && props.courses.map((course) => (
-                        <CardCoursePreview key={course.slug} course={course}/>
+                        <CardCoursePreview admin={false} key={course.slug} course={course}/>
                       ))}
                     </section>
                   </div>

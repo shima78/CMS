@@ -1,11 +1,30 @@
-import React from "react";
+import  {useContext, useEffect,useState} from "react";
 import Link from "next/link";
+import {Context} from "../../context"
+import axios from "axios"
+import {useRouter} from "next/router"
+import {toast} from "react-toastify"
 // components
 
-import IndexDropdown from "components/Dropdowns/IndexDropdown.js";
+
 
 export default function Navbar(props) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
+  const {state, dispatch} = useContext(Context)
+  const  router  = useRouter()
+  const { user } = state
+
+  useEffect(()=>{
+    const user = window.localStorage.getItem('user')
+  }, [])
+
+  const logout = async () => {
+    dispatch({ type: "LOGOUT" });
+    window.localStorage.removeItem("user")
+    console.log(user)
+    const {data} = await axios.get("/api/logout")
+    toast(data.message)
+  }
   return (
     <>
       <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow">
@@ -16,7 +35,7 @@ export default function Navbar(props) {
                 className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                 href="#pablo"
               >
-                Notus NextJS
+                داده فناوران هوشمند خوارزمی
               </a>
             </Link>
             <button
@@ -34,62 +53,65 @@ export default function Navbar(props) {
             }
             id="example-navbar-warning"
           >
+
             <ul className="flex flex-col lg:flex-row list-none mr-auto">
-              <li className="flex items-center">
-                <a
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus?ref=nnjs-index-navbar"
-                >
-                  <i className="text-blueGray-400 far fa-file-alt text-lg leading-lg mr-2" />{" "}
-                  Docs
-                </a>
-              </li>
             </ul>
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="flex items-center">
-                <IndexDropdown />
-              </li>
-              <li className="flex items-center">
-                <a
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdemos.creative-tim.com%2Fnotus-nextjs%2F"
-                  target="_blank"
-                >
-                  <i className="text-blueGray-400 fab fa-facebook text-lg leading-lg " />
-                  <span className="lg:hidden inline-block ml-2">Share</span>
-                </a>
-              </li>
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-0">
 
-              <li className="flex items-center">
-                <a
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnotus-nextjs%2F&text=Start%20your%20development%20with%20a%20Free%20Tailwind%20CSS%20and%20NextJS%20UI%20Kit%20and%20Admin.%20Let%20Notus%20NextJS%20amaze%20you%20with%20its%20cool%20features%20and%20build%20tools%20and%20get%20your%20project%20to%20a%20whole%20new%20level."
-                  target="_blank"
-                >
-                  <i className="text-blueGray-400 fab fa-twitter text-lg leading-lg " />
-                  <span className="lg:hidden inline-block ml-2">Tweet</span>
-                </a>
-              </li>
+              { user === null  &&(
+                  <>
+                    <li className="flex items-center">
+                      <Link
+                          href="/auth/login"
 
-              <li className="flex items-center">
-                <a
-                  className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="https://github.com/creativetimofficial/notus-nextjs?ref=nnjs-index-navbar"
-                  target="_blank"
-                >
-                  <i className="text-blueGray-400 fab fa-github text-lg leading-lg " />
-                  <span className="lg:hidden inline-block ml-2">Star</span>
-                </a>
-              </li>
+                      >
+                        <a className={
+                          "lg:text-black lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                        }>ورود</a>
+                      </Link>
+                    </li>
+                    <li className="flex items-center">
+                      <Link
+                          href="/auth/register"
 
-              <li className="flex items-center">
-                <button
-                  className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-                  type="button"
-                >
-                  <i className="fas fa-arrow-alt-circle-down"></i> Download
-                </button>
-              </li>
+                      >
+                        <a
+                            className={
+                              "lg:text-black  text-black " +
+                                "px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            }>ثبت نام</a>
+                      </Link>
+                    </li>
+                  </>
+              )
+
+              }
+              { user !== null && (
+                  <>
+                    <li onClick={logout} className="flex items-center cursor-pointer">
+                        <span className=" clickable lg:text-black lg:hover:text-blueGray-200
+                        text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                        >خروج</span>
+
+                    </li>
+
+                    {user && user.role.includes("Admin") &&
+                        <li className="flex items-center">
+                          <Link
+                              href="/admin/dashboard"
+
+                          >
+                            <a
+                                className={
+                                  "lg:text-black lg:hover: text-black px-3 py-4 lg:py-2 flex" +
+                                    " items-center text-xs uppercase font-bold"
+                                }>پنل ادمین</a>
+                          </Link>
+                        </li>}
+                  </>
+              )
+              }
+
             </ul>
           </div>
         </div>

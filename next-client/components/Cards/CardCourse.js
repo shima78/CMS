@@ -4,28 +4,11 @@ import axios from "axios"
 
 // components
 
-export default function CardCourse() {
-    const [course, setCourse] = useState({})
-    const router = useRouter()
-    const {slug} = router.query
-    useEffect( () => {
-        loadCourse();
-    }, []);
-
-    const loadCourse =  () => {
-        axios
-            .get(`/api/fetch-course/${slug}`)
-            .then((res) => {
-                console.log(res)
-                setCourse(res.data);
-            }).catch((err) => {
-            console.log(err)
-        })
-
-    };
+export default function CardCourse(props) {
+    const course = props.course
     return (
         <>
-            <div className=" relative py-6 bg-white justify-center fle rounded-lg">
+            <div className=" relative mt-8 bg-white justify-center rounded-lg">
                 <div className="justify-center flex py-5">
                     <h1 className="text-gray-900 font-bold text-2xl justify-center">{course.name}</h1>
                 </div>
@@ -67,3 +50,13 @@ export default function CardCourse() {
         </>
     );
 }
+
+export async function getServerSideProps() {
+    const {data} = await axios.get(`${process.env.API}/fetch-course`)
+    return {
+        props:{
+            course : data
+        },
+    }
+}
+

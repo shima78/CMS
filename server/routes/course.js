@@ -6,7 +6,7 @@ const router = express.Router();
 import { requireSignin, isAdmin } from "../middlewares";
 
 // controllers
-import { create, fetchCourse, fetchAllCourses, checkEnrollment, freeEnrollment } from "../controllers/course";
+import { create, fetchCourse, fetchAllCourses, checkEnrollment, freeEnrollment, paidEnrollment } from "../controllers/course";
 
 // image
 // router.post("/course/upload-image", uploadImage);
@@ -19,5 +19,6 @@ router.get("/fetch-course/:slug", fetchCourse)
 //enrollment
 router.get("/check-enrollment/:courseId", requireSignin, checkEnrollment);
 router.post("/free-enrollment/:courseId", requireSignin, freeEnrollment);
+router.post("/paid-enrollment/:courseId", requireSignin, paidEnrollment);
 
 module.exports = router;

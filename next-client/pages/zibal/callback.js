@@ -1,21 +1,19 @@
+
 import CardCourse from "../../components/Cards/CardCourse";
 import Navbar from "../../components/Navbars/IndexNavbar";
 import axios from "axios";
 import {toast} from "react-toastify";
 import {Context} from "../../context";
 import {useState,useContext, useEffect} from 'react'
-import {useRouter} from 'next/router'
 
 
-export default function CourseView(props) {
+export default function Callback(props) {
     const {state, dispatch} = useContext(Context)
-    const [loading, setLoading] = useState(false)
-    const [enrolled, setEnrolled] = useState({})
-    const router = useRouter()
+    const [loading, setLoading] = useState(false);
+    const [enrolled, setEnrolled] = useState({});
     const {user} = state
     const course = props.course
     useEffect(() =>{
-
         console.log("check")
         checkEnrollment()
 
@@ -52,7 +50,7 @@ export default function CourseView(props) {
                 toast("شما قبلا در این دوره ثبت نام کرده اید")
             }
 
-                setLoading(true);
+            setLoading(true);
             const { data } = await axios.post(`/api/free-enrollment/${course._id}`);
             toast(data.message);
             setLoading(false);
@@ -64,22 +62,8 @@ export default function CourseView(props) {
             setLoading(false);
         }
     };
-    const handlePaidEnrollment = async () => {
-        console.log("handle paid enrollment")
-        try {
-            setLoading(true)
-            // check if user is logged in
-            if (!user) return router.push("auth/login")
-            // check if already enrolled
-            if (enrolled.status)
-                return router.push(`/`)
-            const { data } = await axios.post(`/api/paid-enrollment/${course._id}`)
-            return router.push(data.url)
-        } catch (err) {
-            toast("Enrollment failed, try again.")
-            console.log(err)
-            setLoading(false)
-        }
+    const handlePaidEnrollment =  async (e) => {
+
     }
     return (
         <>

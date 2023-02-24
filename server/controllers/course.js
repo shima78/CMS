@@ -1,6 +1,17 @@
 import Course from "../models/course";
 import slugify from "slugify";
 import User from "../models/user";
+import Zibal from "./zibal";
+
+// Initialize with configurations
+Zibal.init({
+    merchant: '61d0809518f9344fd9c2eb5b',
+    callbackUrl: 'https://tailwindui.com/components#pricing',
+    logLevel: 2
+    // 0: none (default in production)
+    // 1: error
+    // 2: error + info (default)
+});
 
 export const create = async (req, res) => {
     console.log("CREATE COURSE", req.body);
@@ -86,3 +97,42 @@ export const freeEnrollment = async (req, res) => {
         return res.status(400).send("خطا. ثبت نام انجام نشد");
     }
 };
+
+export const paidEnrollment = async (req, res) => {
+    try {
+        // check if course is free or paid
+        const course = await Course.findById(req.params.courseId)
+            .exec();
+        console.log(course)
+        if (course.free) return;
+        //Rials
+        const fee = (course.price * 10);
+
+        // Payment Request
+        Zibal.request(fee)
+            .then((result) => {
+                console.log(result);
+                const trackId = result.trackId
+                // { trackId: 1533727744287, result: 100, message: 'success', statusMessage: 'با موفقیت تایید شد.' }
+                const url = Zibal.startURL(trackId);
+                res.send({url:url});
+            }).catch((err) => {
+            console.error(err);
+            // { result: 103, message: 'authentication error', statusMessage: '{merchant} غیرفعال' }
+        });
+// Payment Start URL
+
+// >> then open url in browser
+
+        // console.log("SESSION ID => ", session);
+        //
+        // await User.findByIdAndUpdate(req.user._id, {
+        //     stripeSession: session,
+        // }).exec();
+        // res.send(session.id);
+    } catch (err) {
+        console.log("PAID ENROLLMENT ERR", err);
+        return res.status(400).send("Enrollment create failed");
+    }
+};
+

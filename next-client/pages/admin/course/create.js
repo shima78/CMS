@@ -21,6 +21,7 @@ export default function Dashboard() {
     const [values, setValues] = useState({
         name: "",
         instructors : [],
+        chapters : '',
         description: "",
         prerequisites: '',
         duration : "",
@@ -203,7 +204,6 @@ export default function Dashboard() {
                                         value={values.description}
                                         onChange={handleChange}
                                         required
-
                                     />
                                 </div>
                             </div>
@@ -216,7 +216,30 @@ export default function Dashboard() {
                                         className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
                                         htmlFor="grid-password"
                                     >
-                                        پیش نیاز ها
+                                        توضیحات
+                                    </label>
+                                    <textarea
+                                        type="text"
+                                        className="border-0 px-3 py-3 placeholder-blueGray-400 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                        name="description"
+                                        cols="7"
+                                        rows="7"
+                                        value={values.description}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-wrap">
+                            <div className="w-full lg:w-12/12 px-4">
+                                <div className="relative w-full mb-3">
+                                    <label
+                                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                        htmlFor="grid-password"
+                                    >
+                                        سر فصل ها
                                     </label>
                                     <textarea
                                         type="text"
@@ -224,7 +247,7 @@ export default function Dashboard() {
                                         name="prerequisites"
                                         cols="7"
                                         rows="7"
-                                        value={values.prerequisites}
+                                        value={values.chapters}
                                         onChange={handleChange}
                                         required
                                     />

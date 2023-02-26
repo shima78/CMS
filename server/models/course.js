@@ -20,6 +20,10 @@ const courseSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
+        chapters: {
+            type: String,
+            required: true,
+        },
         prerequisites: {
             type: String,
             default : ''

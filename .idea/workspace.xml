@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="Paid Enrollment">
-      <change afterPath="$PROJECT_DIR$/next-client/pages/student/course/[slug].js" afterDir="false" />
+    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="user courses">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCoursePreview.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCoursePreview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/IndexNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/IndexNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Sidebar/StudentSidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Sidebar/StudentSidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/auth/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/course/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/course/[slug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/student/studentDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/student/studentDashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/styles/tailwind.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/course.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +71,7 @@
       <workItem from="1676650195297" duration="10163000" />
       <workItem from="1676727967714" duration="5242000" />
       <workItem from="1676963681831" duration="17400000" />
-      <workItem from="1677085715075" duration="25506000" />
+      <workItem from="1677085715075" duration="25751000" />
     </task>
     <task id="LOCAL-00001" summary="create component UI">
       <created>1676222665031</created>
@@ -169,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677251247247</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="user courses">
+      <created>1677420561345</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677420561345</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +195,8 @@
     <MESSAGE value="single course with SSR" />
     <MESSAGE value="Free enrollment" />
     <MESSAGE value="Paid Enrollment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Paid Enrollment" />
+    <MESSAGE value="user courses" />
+    <option name="LAST_COMMIT_MESSAGE" value="user courses" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

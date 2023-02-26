@@ -30,7 +30,6 @@ export default function Dashboard() {
             }).catch((err) => {
                 console.log(err)
         })
-
     };
 
     return (
@@ -48,9 +47,6 @@ export default function Dashboard() {
             </div>
 
         </>
-
-
-
 
     );
 }

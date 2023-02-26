@@ -36,7 +36,7 @@ export default function Login() {
 
       //redirect
       if(data.role.includes("Admin")) {
-        router.push("/admin/dashboard")
+        router.push("/admin/course/listAllCourses")
       }
       else {
         router.push("/student/studentDashboard")

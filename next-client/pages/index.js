@@ -447,7 +447,9 @@ export default function Landing(props) {
 }
 
 export async function getServerSideProps() {
+  console.log(`${process.env.API}/fetch-all-courses`)
   const {data} = await axios.get(`${process.env.API}/fetch-all-courses`)
+
   return {
     props:{
       courses : data

@@ -136,3 +136,9 @@ export const paidEnrollment = async (req, res) => {
     }
 };
 
+export const userCourses = async (req, res) => {
+    const user = await User.findById(req.auth._id).exec();
+    const courses = await Course.find({ _id: { $in: user.courses } })
+        .exec();
+    res.json(courses);
+};

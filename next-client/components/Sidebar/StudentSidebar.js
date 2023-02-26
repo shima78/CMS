@@ -90,7 +90,7 @@ export default function Sidebar() {
 
                         <ul className="md:flex-col md:min-w-full flex flex-col list-none">
                             <li className="items-center">
-                                <Link href="/admin/course/listAllCourses">
+                                <Link href="/student/studentDashboard">
                                     <a
 
                                         className={

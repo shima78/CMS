@@ -48,7 +48,7 @@ export default function CourseView(props) {
 
             // check if already enrolled
             if (enrolled.status) {
-                // return router.push(`/user/course/${enrolled.course.slug}`);
+                return router.push(`/student/course/${enrolled.course.slug}`);
                 toast("شما قبلا در این دوره ثبت نام کرده اید")
             }
 

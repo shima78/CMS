@@ -98,7 +98,7 @@ export default function Navbar(props) {
                     {user && user.role.includes("Admin") &&
                         <li className="flex items-center">
                           <Link
-                              href="/admin/dashboard"
+                              href="/admin/course/listAllCourses"
 
                           >
                             <a
@@ -108,6 +108,20 @@ export default function Navbar(props) {
                                 }>پنل ادمین</a>
                           </Link>
                         </li>}
+                    {user && user.role.includes("ُStudent") &&
+                        <li className="flex items-center">
+                          <Link
+                              href="/student/studentDasboard"
+
+                          >
+                            <a
+                                className={
+                                    "lg:text-black lg:hover: text-black px-3 py-4 lg:py-2 flex" +
+                                    " items-center text-xs uppercase font-bold"
+                                }>پنل کاربری</a>
+                          </Link>
+                        </li>}
+
                   </>
               )
               }

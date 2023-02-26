@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="Free enrollment">
-      <change afterPath="$PROJECT_DIR$/next-client/pages/zibal/callback.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/zibal.js" afterDir="false" />
+    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="Paid Enrollment">
+      <change afterPath="$PROJECT_DIR$/next-client/pages/student/course/[slug].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCourseAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCourseAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCoursePreview.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCoursePreview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/AuthNavbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/IndexNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/IndexNavbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/components/Sidebar/StudentSidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Sidebar/StudentSidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/listAllCourses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/auth/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/auth/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/pages/course/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/course/[slug].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/student/studentDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/student/studentDashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/styles/tailwind.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/course.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +83,7 @@
       <workItem from="1676650195297" duration="10163000" />
       <workItem from="1676727967714" duration="5242000" />
       <workItem from="1676963681831" duration="17400000" />
-      <workItem from="1677085715075" duration="14795000" />
+      <workItem from="1677085715075" duration="25506000" />
     </task>
     <task id="LOCAL-00001" summary="create component UI">
       <created>1676222665031</created>
@@ -160,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677093974546</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Paid Enrollment">
+      <created>1677251247247</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677251247247</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +199,8 @@
     <MESSAGE value="song course with SSR" />
     <MESSAGE value="single course with SSR" />
     <MESSAGE value="Free enrollment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Free enrollment" />
+    <MESSAGE value="Paid Enrollment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Paid Enrollment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

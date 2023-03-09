@@ -50,8 +50,10 @@ export default function CardCourse(
                     <div className="w-1/3 p-4">
 
                         <h1 className="text-gray-900 font-bold mt-5 text-lg">پیش نیاز ها</h1>
-                        <p className="mt-2 text-gray-600 ">{course.prerequisites}</p>
-
+                        {course.prerequisites && course.prerequisites.map((preq, index) => (
+                            <p key={index} className="mt-2 text-gray-600 ">{preq}</p>))
+                        }
+                        <br/>
                         <h1 className="text-gray-900 font-bold mt-5 text-lg">مدرسین</h1>
 
                         {course.instructors && course.instructors.map((inst, index) => (

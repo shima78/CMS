@@ -64,7 +64,12 @@ export const checkEnrollment = async (req, res) => {
     const user = await User.findById(req.auth._id).exec();
     // check if course_id is found in user courses array
     let ids = [];
-    let length = user.courses && user.courses.length;
+    let length = 0
+    if(user.courses){
+        length = user.courses.length;
+    }
+
+
     for (let i = 0; i < length; i++) {
         ids.push(user.courses[i].toString());
     }

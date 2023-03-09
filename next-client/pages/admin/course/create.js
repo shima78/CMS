@@ -23,7 +23,7 @@ export default function Dashboard() {
         instructors : [],
         chapters : '',
         description: "",
-        prerequisites: '',
+        prerequisites: [],
         duration : "",
         price: "9999",
         uploading: false,
@@ -32,11 +32,35 @@ export default function Dashboard() {
         imagePreview: "",
     });
     const [counter, setCounter] = useState(1);
+    const [prerequisitesCounter, setPrerequisitesCounter] = useState(0);
+    const [prerequisitesInput, setPrerequisitesInput] = useState([]);
     const [instructorsInput, setInstructorsInput] = useState([]);
 
     const addInstructor = () => {
         setCounter(counter + 1);
     };
+    const addPrerequisite = () => {
+        setPrerequisitesCounter(prerequisitesCounter + 1);
+    };
+
+    const handleOnPrerequisiteChange = (e) => {
+        const temp = prerequisitesInput
+        temp[e.target.name] = e.target.value
+        setPrerequisitesInput(temp)
+        setValues({ ...values, prerequisites: prerequisitesInput });
+        console.log(values)
+    };
+
+    const removePrerequisite = (index) => (e) =>{
+        setPrerequisitesCounter(prerequisitesCounter-1)
+        const temp = prerequisitesInput
+
+        temp.splice(index,1)
+
+        setPrerequisitesInput(temp)
+        setValues({ ...values, prerequisites: prerequisitesInput });
+    }
+
 
     const handleOnInstructorChange = (e) => {
         const temp = instructorsInput
@@ -208,28 +232,7 @@ export default function Dashboard() {
                                 </div>
                             </div>
                         </div>
-
                         <div className="flex flex-wrap">
-                            <div className="w-full lg:w-12/12 px-4">
-                                <div className="relative w-full mb-3">
-                                    <label
-                                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
-                                        htmlFor="grid-password"
-                                    >
-                                        توضیحات
-                                    </label>
-                                    <textarea
-                                        type="text"
-                                        className="border-0 px-3 py-3 placeholder-blueGray-400 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        name="description"
-                                        cols="7"
-                                        rows="7"
-                                        value={values.description}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
-                            </div>
                         </div>
 
                         <div className="flex flex-wrap">
@@ -244,7 +247,7 @@ export default function Dashboard() {
                                     <textarea
                                         type="text"
                                         className="border-0 px-3 py-3 placeholder-blueGray-400 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                        name="prerequisites"
+                                        name="chapters"
                                         cols="7"
                                         rows="7"
                                         value={values.chapters}
@@ -255,7 +258,63 @@ export default function Dashboard() {
                             </div>
                         </div>
                         <hr className="mt-6 border-b-1 border-blueGray-300" />
+                        <div className="text-center flex justify-between">
+                            <h6 className="text-blueGray-400  text-sm mt-3 mb-6 font-bold uppercase">پیش نیاز ها</h6>
+                            <button
+                                className="btn-add  mt-3 mb-4 px-3 text-white
+                                 font-bold uppercase text-xs  rounded shadow hover:shadow-md outline-none
+                                 focus:outline-none mr-1 ease-linear transition-all duration-150"
+                                type="button"
+                                onClick={addPrerequisite}
+                            >
+                                <i className="fa fa-plus ml-1"/>
+                                پیش نیاز ها
+                            </button>
+                        </div>
+                        <div className="flex flex-wrap" id="instructor-section">
+                            {
+                                Array.from( { length: prerequisitesCounter}).map((c,index) => {
+                                        return (
+                                            <div className="w-full lg:w/12 px-4" key={index}>
+                                                <div className="relative w-full mb-3 ">
+                                                    <label
+                                                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                                        htmlFor="grid-password"
+                                                    >
+                                                        پیش نیاز
+                                                    </label>
+                                                    <input
+                                                        name={index.toString()}
+                                                        required
+                                                        type="text"
+                                                        className="border-0 px-3 py-3 placeholder-blueGray-400
+                                                        text-blueGray-600 bg-white rounded text-sm shadow
+                                                        focus:outline-none focus:ring w-10/12 ease-linear
+                                                        transition-all duration-150"
+                                                        placeholder="پیش نیاز"
+                                                        value={prerequisitesInput[index]}
+                                                        onChange={handleOnPrerequisiteChange}
+                                                    />
+                                                    <button
+                                                        className="btn-remove py-1  px-2 text-white
+                                                    font-bold uppercase text-xs
+                                                     rounded shadow hover:shadow-md outline-none
+                                                        focus:outline-none mr-3 ease-linear transition-all duration-150"
+                                                        type="button"
+                                                        onClick={removePrerequisite(index)}
+                                                    >
+                                                        <i className="fa fa-minus "/>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        )
+                                    }
 
+                                )
+                            }
+                        </div>
+
+                        <hr className="mt-6 border-b-1 border-blueGray-300" />
                         <div className="text-center flex justify-between">
                             <h6 className="text-blueGray-400  text-sm mt-3 mb-6 font-bold uppercase">مدرس ها</h6>
                             <button
@@ -269,7 +328,6 @@ export default function Dashboard() {
                                 مدرس
                             </button>
                         </div>
-
                         <div className="flex flex-wrap" id="instructor-section">
                             {
                                 Array.from( { length: counter}).map((c,index) => {
@@ -312,6 +370,8 @@ export default function Dashboard() {
                                 )
                             }
                         </div>
+
+
                         <hr className="mt-6 border-b-1 border-blueGray-300" />
 
                         <button

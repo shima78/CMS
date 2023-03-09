@@ -24,10 +24,7 @@ const courseSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        prerequisites: {
-            type: String,
-            default : ''
-        },
+        prerequisites: [String],
         price: {
             type: Number,
             default: 0,

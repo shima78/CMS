@@ -7,7 +7,7 @@ import { requireSignin, isAdmin } from "../middlewares";
 
 // controllers
 import { create, fetchCourse, fetchAllCourses, checkEnrollment,
-    freeEnrollment, paidEnrollment, userCourses } from "../controllers/course";
+    freeEnrollment, paidEnrollment, userCourses, addLesson } from "../controllers/course";
 
 // image
 // router.post("/course/upload-image", uploadImage);
@@ -24,5 +24,8 @@ router.post("/paid-enrollment/:courseId", requireSignin, paidEnrollment);
 
 //user courses
 router.get("/user-courses", requireSignin, userCourses);
+
+//lessons
+router.post("/course/lesson/:slug", requireSignin, addLesson);
 
 module.exports = router;

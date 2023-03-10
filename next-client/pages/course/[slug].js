@@ -11,6 +11,7 @@ export default function CourseView(props) {
     const {state, dispatch} = useContext(Context)
     const [loading, setLoading] = useState(false)
     const [enrolled, setEnrolled] = useState({})
+
     const router = useRouter()
     const {user} = state
     const course = props.course

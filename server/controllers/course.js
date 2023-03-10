@@ -147,3 +147,46 @@ export const userCourses = async (req, res) => {
         .exec();
     res.json(courses);
 };
+
+export const addLesson = async (req, res) => {
+    try {
+
+        const user = await User.findById(req.auth._id).exec();
+        const { slug } = req.params;
+        const { title, content, video } = req.body;
+
+        if (!user.role.includes("Admin")) {
+            return res.status(400).send("شما اجازه ایجاد درس جدید را ندارید");
+        }
+
+        const updated = await Course.findOneAndUpdate(
+            { slug },
+            {
+                $push: { lessons: { title, content, video, slug: slugify(title) } },
+            },
+            { new: true }
+        )
+            .exec();
+        res.json(updated);
+    } catch (err) {
+        console.log(err);
+        return res.status(400).send("خطا. دوباره تلاش کنید");
+    }
+};
+
+export const update = async (req, res) => {
+    try {
+        const { slug } = req.params;
+        // console.log(slug);
+        const course = await Course.findOne({ slug }).exec();
+        // console.log("COURSE FOUND => ", course);
+
+        const updated = await Course.findOneAndUpdate({ slug }, req.body, {
+            new: true,
+        }).exec();
+        res.json(updated);
+    } catch (err) {
+
+        return res.status(400).send(err.message);
+    }
+};

@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="user courses">
+    <list default="true" id="0a427baf-c2b7-48c5-9959-f3050df96c9e" name="Changes" comment="fixed Zibal gateway, add and remove prerequisite button for course">
+      <change afterPath="$PROJECT_DIR$/next-client/components/Modal/AddLessonModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCourse.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCourse.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next-client/components/Cards/CardCourseAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Cards/CardCourseAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/components/Navbars/IndexNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/components/Navbars/IndexNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/admin/builtInDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/builtInDashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/pages/admin/course/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/admin/course/create.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-client/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/pages/course/[slug].js" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/pages/course/[slug].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-client/styles/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/next-client/styles/tailwind.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/zibal.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/zibal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/models/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/course.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/course.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/course.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,7 @@
       <workItem from="1676963681831" duration="17400000" />
       <workItem from="1677085715075" duration="49658000" />
       <workItem from="1678022298872" duration="882000" />
-      <workItem from="1678381689456" duration="1618000" />
+      <workItem from="1678381689456" duration="13862000" />
     </task>
     <task id="LOCAL-00001" summary="create component UI">
       <created>1676222665031</created>
@@ -188,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677420791304</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fixed Zibal gateway, add and remove prerequisite button for course">
+      <created>1678383755468</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678383755469</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +242,8 @@
     <MESSAGE value="Paid Enrollment" />
     <MESSAGE value="user courses" />
     <MESSAGE value="chapters" />
-    <option name="LAST_COMMIT_MESSAGE" value="chapters" />
+    <MESSAGE value="fixed Zibal gateway, add and remove prerequisite button for course" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed Zibal gateway, add and remove prerequisite button for course" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -262,6 +267,12 @@
           <line>125</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/next-client/components/Modal/AddLessonModal.js</url>
+          <line>35</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

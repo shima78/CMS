@@ -1,5 +1,29 @@
 import mongoose from "mongoose";
-
+const lessonSchema = new mongoose.Schema(
+    {
+        title: {
+            type: String,
+            trim: true,
+            minlength: 3,
+            maxlength: 320,
+            required: true,
+        },
+        slug: {
+            type: String,
+            lowercase: true,
+        },
+        content: {
+            type: {},
+            minlength: 200,
+        },
+        video_link: {},
+        free_preview: {
+            type: Boolean,
+            default: false,
+        },
+    },
+    { timestamps: true }
+);
 const courseSchema = new mongoose.Schema(
     {
         name: {
@@ -24,10 +48,7 @@ const courseSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        prerequisites: {
-            type: String,
-            default : ''
-        },
+        prerequisites: [String],
         price: {
             type: Number,
             default: 0,
@@ -38,6 +59,11 @@ const courseSchema = new mongoose.Schema(
             default: true,
         },
         instructors: [String],
+        published: {
+            type: Boolean,
+            default: false,
+        },
+        lessons: [lessonSchema],
 
     },
     { timestamps: true }

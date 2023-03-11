@@ -89,7 +89,7 @@ export default function Navbar(props) {
               { user !== null && (
                   <>
                     <li onClick={logout} className="flex items-center cursor-pointer">
-                        <span className=" clickable lg:text-black lg:hover:text-blueGray-200
+                        <span className=" clickable lg:text-black lg:hover:text-blueGray-600
                         text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                         >خروج</span>
 
@@ -103,7 +103,7 @@ export default function Navbar(props) {
                           >
                             <a
                                 className={
-                                  "lg:text-black lg:hover: text-black px-3 py-4 lg:py-2 flex" +
+                                  "lg:text-black lg:hover:text-blueGray-600  px-3 py-4 lg:py-2 flex" +
                                     " items-center text-xs uppercase font-bold"
                                 }>پنل ادمین</a>
                           </Link>
@@ -116,7 +116,7 @@ export default function Navbar(props) {
                           >
                             <a
                                 className={
-                                    "lg:text-black lg:hover: text-black px-3 py-4 lg:py-2 flex" +
+                                    "lg:text-black lg:hover:text-blueGray-600 px-3 py-4 lg:py-2 flex" +
                                     " items-center text-xs uppercase font-bold"
                                 }>پنل کاربری</a>
                           </Link>

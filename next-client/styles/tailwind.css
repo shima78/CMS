@@ -312,7 +312,7 @@ button {
 
 button:focus {
   outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 5px auto ;
 }
 
 fieldset {
@@ -1302,7 +1302,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgba(234, 179, 8, var(--tw-bg-opacity));
 }
-
+.bg-orange-100{
+  --tw-bg-opacity: 1;
+  background-color: rgba(247, 236, 220, var(--tw-bg-opacity));
+}
 .bg-orange-200 {
   --tw-bg-opacity: 1;
   background-color: rgba(254, 215, 170, var(--tw-bg-opacity));
@@ -1413,9 +1416,11 @@ select {
   background-color: rgba(71, 85, 105, var(--tw-bg-opacity));
 }
 
+
 .bg-none {
   background-image: none;
 }
+
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
@@ -2526,6 +2531,9 @@ select {
 .max-w-580-px {
   max-width: 580px;
 }
+max-w-700-px {
+  max-width: 580px;
+}
 
 .min-h-screen {
   min-height: 100vh;
@@ -3629,6 +3637,9 @@ select {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 
 .transform {
   --tw-translate-x: 0;
@@ -4283,4 +4294,10 @@ input:checked + .slider:before {
 .course-banner-panel{
   min-width: 40rem;
   max-width: 50rem;
+}
+.bg-green {
+  background-color: green;
+}
+.bg-blue{
+  background-color: #2563eb;
 }

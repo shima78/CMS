@@ -9,7 +9,7 @@ import CardSocialTraffic from "components/Cards/CardSocialTraffic.js";
 
 // layout for page
 
-import Student from "layouts/student.js";
+import Student from "../../layouts/Student";
 
 export default function BuiltInDashboard() {
   return (

@@ -6,7 +6,7 @@ export default class Zibal {
     static config = {}
     // private
     static api = {
-        base: 'https://gateway.zibal.ir/v1/',
+        base: 'https://gateway.zibal.ir/',
     }
 
     static extraProperties = [
